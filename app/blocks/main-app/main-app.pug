@@ -1,0 +1,15 @@
+mixin main-app()
+  .main-app
+    h1.main-app__title
+      | Update css varibles with 
+      span.main-app__title-special js
+    .main-app__form-group 
+      label.main-app__label(for="main-app__spacing") Image spacing
+      input#main-app__spacing.main-app__input(type="range" min=0 max=50 name="main-app__spacing" data-spacing="px")
+    .main-app__form-group 
+      label.main-app__label(for="main-app__blur") Image blur
+      input#main-app__blur.main-app__input(type="range" min=0 max=50 name="main-app__blur" data-spacing="px")
+    .main-app__form-group 
+      label.main-app__label(for="main-app__color") Background color
+      input#main-app__color.main-app__input(type="color" name="main-app__color")
+    img.main-app__image(src="https://picsum.photos/600/400?random", alt="Base image", width=600, height=400 )
